@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="10px"
+	android:paddingRight="10px"
+	android:layout_marginBottom="10px"
+	android:background="@drawable/custom_car_list"
+	>
+	
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="325px"
+    android:layout_height="wrap_content"
+	>
+
+    <TextView android:id="@+id/childname"
+         android:paddingLeft="50px"
+         android:textSize="20px"
+         android:textStyle="bold"
+         android:layout_width="125px"
+         android:layout_height="65px"
+         android:gravity="center_vertical"
+         android:layout_weight="1" 
+         />
+    
+    
+        <TextView android:id="@+id/chcon"
+         android:textSize="20px"
+         android:textStyle="bold"
+         android:layout_width="125px"
+         android:layout_height="65px"
+         android:gravity="center_vertical"
+         android:layout_weight="1" 
+         android:visibility="gone"
+         android:text="(Connected)" 
+         />
+    
+    	    <Chronometer android:id="@+id/chronometer"
+	        android:layout_width="wrap_content"
+	        android:paddingRight="10px"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:visibility="gone"
+	        android:text="" />
+	       
+	</LinearLayout>
+
+
+	
+   	 <Button
+	 	    android:id="@+id/connectButton"   
+	 	    android:textSize="15px" 
+	        android:layout_width="100px"
+	        android:layout_height="50px"
+	        android:text="Connect" 
+	        android:gravity="center"
+	        android:textStyle="bold"
+	        android:focusableInTouchMode="false"
+	        android:layout_weight="1" 
+            android:background="@drawable/connect_custom_button"/>
+
+</LinearLayout>
+

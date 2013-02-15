@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    
+    <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="150px"
+	   	android:background="#33b5e5" 
+	   	android:gravity="center_vertical"
+	   	android:paddingLeft="10px"
+	   	android:paddingRight="10px"
+	   	android:layout_marginBottom="10px"
+ 		android:layout_weight="1">
+ 		
+        
+        
+        <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="250px"
+		android:layout_height="wrap_content">
+	    
+		 	<TextView 
+		 	    android:id="@+id/userText" 
+		 	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:text="Mr. Driver"
+		        android:paddingLeft="10px"
+	         	android:textSize="30px"
+	         	android:textStyle="bold" 
+		        android:layout_weight="1"/>  
+		        
+		 	<TextView 
+		 	    android:id="@+id/usershare" 
+		 	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:text=""
+		        android:paddingLeft="10px"
+	         	android:textSize="20px"
+	         	android:textStyle="italic" 
+		        android:layout_weight="1"/>  
+	        
+	    </LinearLayout>    
+ 
+	 	   <Button
+	 	    android:id="@+id/shareButton"    
+	        android:layout_width="150px"
+	        android:layout_height="75px"
+	        android:text="Share" 
+	       	android:layout_weight="1"
+	       	android:textStyle="bold"
+	       	android:background="@drawable/custom_button"
+	       	/>
+    
+ 	</LinearLayout>
+ 	
+	<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+	         android:orientation="vertical"
+	         android:layout_width="fill_parent" 
+	         android:layout_height="fill_parent"
+ 			 android:layout_weight="3"
+			
+	         >
+	 
+	     <ExpandableListView android:id="@+id/android:list"
+	               android:layout_width="fill_parent" 
+	               android:layout_height="fill_parent"
+	               android:descendantFocusability="blocksDescendants"
+	               />
+	 
+	     <TextView android:id="@+id/android:empty"
+	               android:layout_width="fill_parent" 
+	               android:layout_height="fill_parent"
+	               android:text="No items"/>
+	</LinearLayout>
+	
+	
+	
+</LinearLayout>
